@@ -44,8 +44,15 @@ namespace BaiKiemTraXML
                 Console.WriteLine($"Mã SV: {sv.MaSV} | Họ tên: {sv.HoTen} | Bộ phận: {sv.BoPhan} | Giới tính: {sv.GioiTinh} | Ngày sinh: {sv.NgaySinh:dd/MM/yyyy} ({sv.Tuoi} tuổi) | Nghề: {sv.NgheNghiep} | Quê: {sv.QueQuan}");
             }
 
-  
-           
+            // Câu 2 – Truy vấn danh sách
+            Console.WriteLine("\n=== CÂU 2: TRUY VẤN MÃ SV, HỌ TÊN VÀ BỘ PHẬN ===");
+            var c2 = dsSinhVien.Select(x => new { x.MaSV, x.HoTen, x.BoPhan });
+            foreach (var sv in c2)
+            {
+                Console.WriteLine($"Mã SV: {sv.MaSV} - Họ tên: {sv.HoTen} - Bộ phận: {sv.BoPhan}");
+            }
+
+
 
             Console.ReadLine();
         }
