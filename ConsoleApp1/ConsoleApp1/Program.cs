@@ -75,6 +75,15 @@ namespace BaiKiemTraXML
             {
                 Console.WriteLine($"Mã SV: {sv.MaSV} | Họ tên: {sv.HoTen} | Tuổi: {sv.Tuoi}");
             }
+
+            // Câu 6 – Sinh viên có tuổi cao nhất
+            Console.WriteLine("\n=== CÂU 6: SINH VIÊN CÓ TUỔI CAO NHẤT ===");
+            int maxTuoi = dsSinhVien.Max(x => x.Tuoi);
+            var c6 = dsSinhVien.Where(x => x.Tuoi == maxTuoi);
+            foreach (var sv in c6)
+            {
+                Console.WriteLine($"Mã SV: {sv.MaSV} | Họ tên: {sv.HoTen} | Nghề nghiệp: {sv.NgheNghiep} | Tuổi: {sv.Tuoi}");
+            }
             Console.ReadLine();
         }
     }
