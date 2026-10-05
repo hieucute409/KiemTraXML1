@@ -105,6 +105,15 @@ namespace BaiKiemTraXML
             {
                 Console.WriteLine($"Bộ phận: {group.BoPhan} - Số lượng: {group.SoLuong}");
             }
+
+            // Câu 10 – Truy vấn cá nhân (Thống kê sinh viên theo quê quán)
+            Console.WriteLine("\n=== CÂU 10: TRUY VẤN CÁ NHÂN (THỐNG KÊ SINH VIÊN THEO QUÊ QUÁN) ===");
+            var c10 = dsSinhVien.GroupBy(x => x.QueQuan)
+                               .Select(g => new { QueQuan = g.Key, SoLuong = g.Count(), DanhSach = string.Join(", ", g.Select(x => x.HoTen)) });
+            foreach (var item in c10)
+            {
+                Console.WriteLine($"Quê quán: {item.QueQuan} ({item.SoLuong} người) -> Danh sách: {item.DanhSach}");
+            }
             Console.ReadLine();
         }
     }
