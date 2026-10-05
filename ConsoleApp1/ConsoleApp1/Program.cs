@@ -67,6 +67,14 @@ namespace BaiKiemTraXML
             {
                 Console.WriteLine($"Mã SV: {sv.MaSV} | Họ tên: {sv.HoTen} | Tuổi: {sv.Tuoi} | Giới tính: {sv.GioiTinh} | Bộ phận: {sv.BoPhan}");
             }
+
+            // Câu 5 – Sắp xếp
+            Console.WriteLine("\n=== CÂU 5: DANH SÁCH SẮP XẾP THEO TUỔI GIẢM DẦN ===");
+            var c5 = dsSinhVien.OrderByDescending(x => x.Tuoi);
+            foreach (var sv in c5)
+            {
+                Console.WriteLine($"Mã SV: {sv.MaSV} | Họ tên: {sv.HoTen} | Tuổi: {sv.Tuoi}");
+            }
             Console.ReadLine();
         }
     }
