@@ -91,6 +91,11 @@ namespace BaiKiemTraXML
             double avgNu = dsSinhVien.Where(x => x.GioiTinh == "Nữ").Average(x => x.Tuoi);
             Console.WriteLine($"Tuổi trung bình của Nam: {avgNam:F1}");
             Console.WriteLine($"Tuổi trung bình của Nữ: {avgNu:F1}");
+
+            // Câu 8 – Đếm
+            Console.WriteLine("\n=== CÂU 8: ĐẾM SỐ SINH VIÊN CÓ TUỔI >= 20 VÀ CÒN LÀM VIỆC ===");
+            int countC8 = dsSinhVien.Count(x => x.Tuoi >= 20 && x.TrangThai == "ConLamViec");
+            Console.WriteLine($"Số lượng sinh viên thỏa điều kiện: {countC8}");
             Console.ReadLine();
         }
     }
