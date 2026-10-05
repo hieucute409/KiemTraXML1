@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DanhSachSinhVien>
+  <SinhVien>
+    <MaSV>SV01</MaSV>
+    <HoTen>Nguyễn Anh Hiếu</HoTen>
+    <BoPhan>CNTT</BoPhan>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>2006-09-04</NgaySinh>
+    <NgheNghiep>Sinh viên</NgheNghiep>
+    <QueQuan>Quảng Ngãi</QueQuan>
+    <TrangThai>ConLamViec</TrangThai>
+  </SinhVien>
+  <SinhVien>
+    <MaSV>SV02</MaSV>
+    <HoTen>Lê Minh Đức</HoTen>
+    <BoPhan>CNTT</BoPhan>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>2004-08-20</NgaySinh>
+    <NgheNghiep>Sinh viên</NgheNghiep>
+    <QueQuan>Đà Nẵng</QueQuan>
+    <TrangThai>ConLamViec</TrangThai>
+  </SinhVien>
+  <SinhVien>
+    <MaSV>SV03</MaSV>
+    <HoTen>Nguyễn Khánh Hải</HoTen>
+    <BoPhan>CNTT</BoPhan>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>1998-12-10</NgaySinh>
+    <NgheNghiep>Sinh viên</NgheNghiep>
+    <QueQuan>Quảng Nam</QueQuan>
+    <TrangThai>ConLamViec</TrangThai>
+  </SinhVien>
+  <SinhVien>
+    <MaSV>SV04</MaSV>
+    <HoTen>Phạm Thị Duyên</HoTen>
+    <BoPhan>Kế toán</BoPhan>
+    <GioiTinh>Nữ</GioiTinh>
+    <NgaySinh>2002-03-04</NgaySinh>
+    <NgheNghiep>Sinh viên</NgheNghiep>
+    <QueQuan>Thừa Thiên Huế</QueQuan>
+    <TrangThai>ConLamViec</TrangThai>
+  </SinhVien>
+  <SinhVien>
+    <MaSV>SV05</MaSV>
+    <HoTen>Đinh Xuân Hoàng</HoTen>
+    <BoPhan>Marketing</BoPhan>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>1992-11-25</NgaySinh>
+    <NgheNghiep>Sinh viên</NgheNghiep>
+    <QueQuan>Đà Nẵng</QueQuan>
+    <TrangThai>DaNghiViec</TrangThai>
+  </SinhVien>
+</DanhSachSinhVien>
