@@ -96,6 +96,15 @@ namespace BaiKiemTraXML
             Console.WriteLine("\n=== CÂU 8: ĐẾM SỐ SINH VIÊN CÓ TUỔI >= 20 VÀ CÒN LÀM VIỆC ===");
             int countC8 = dsSinhVien.Count(x => x.Tuoi >= 20 && x.TrangThai == "ConLamViec");
             Console.WriteLine($"Số lượng sinh viên thỏa điều kiện: {countC8}");
+
+            // Câu 9 – Group By
+            Console.WriteLine("\n=== CÂU 9: THỐNG KÊ SỐ LƯỢNG SINH VIÊN THEO BỘ PHẬN ===");
+            var c9 = dsSinhVien.GroupBy(x => x.BoPhan)
+                              .Select(g => new { BoPhan = g.Key, SoLuong = g.Count() });
+            foreach (var group in c9)
+            {
+                Console.WriteLine($"Bộ phận: {group.BoPhan} - Số lượng: {group.SoLuong}");
+            }
             Console.ReadLine();
         }
     }
