@@ -52,7 +52,13 @@ namespace BaiKiemTraXML
                 Console.WriteLine($"Mã SV: {sv.MaSV} - Họ tên: {sv.HoTen} - Bộ phận: {sv.BoPhan}");
             }
 
-
+            // Câu 3 – Truy vấn có điều kiện (Tuổi từ 20 đến 35)
+            Console.WriteLine("\n=== CÂU 3: SINH VIÊN CÓ ĐỘ TUỔI TỪ 20 ĐẾN 35 ===");
+            var c3 = dsSinhVien.Where(x => x.Tuoi >= 20 && x.Tuoi <= 35);
+            foreach (var sv in c3)
+            {
+                Console.WriteLine($"Mã SV: {sv.MaSV} | Họ tên: {sv.HoTen} | Tuổi: {sv.Tuoi}");
+            }
 
             Console.ReadLine();
         }
