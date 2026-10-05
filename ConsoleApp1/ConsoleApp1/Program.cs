@@ -60,6 +60,13 @@ namespace BaiKiemTraXML
                 Console.WriteLine($"Mã SV: {sv.MaSV} | Họ tên: {sv.HoTen} | Tuổi: {sv.Tuoi}");
             }
 
+            // Câu 4 – Truy vấn nhiều điều kiện
+            Console.WriteLine("\n=== CÂU 4: SINH VIÊN NAM, TUỔI >= 25 THUỘC BỘ PHẬN CNTT ===");
+            var c4 = dsSinhVien.Where(x => x.Tuoi >= 25 && x.GioiTinh == "Nam" && x.BoPhan == "CNTT");
+            foreach (var sv in c4)
+            {
+                Console.WriteLine($"Mã SV: {sv.MaSV} | Họ tên: {sv.HoTen} | Tuổi: {sv.Tuoi} | Giới tính: {sv.GioiTinh} | Bộ phận: {sv.BoPhan}");
+            }
             Console.ReadLine();
         }
     }
