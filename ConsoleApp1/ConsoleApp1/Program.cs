@@ -84,6 +84,13 @@ namespace BaiKiemTraXML
             {
                 Console.WriteLine($"Mã SV: {sv.MaSV} | Họ tên: {sv.HoTen} | Nghề nghiệp: {sv.NgheNghiep} | Tuổi: {sv.Tuoi}");
             }
+
+            // Câu 7 – Thống kê tuổi trung bình
+            Console.WriteLine("\n=== CÂU 7: TUỔI TRUNG BÌNH THEO GIỚI TÍNH ===");
+            double avgNam = dsSinhVien.Where(x => x.GioiTinh == "Nam").Average(x => x.Tuoi);
+            double avgNu = dsSinhVien.Where(x => x.GioiTinh == "Nữ").Average(x => x.Tuoi);
+            Console.WriteLine($"Tuổi trung bình của Nam: {avgNam:F1}");
+            Console.WriteLine($"Tuổi trung bình của Nữ: {avgNu:F1}");
             Console.ReadLine();
         }
     }
